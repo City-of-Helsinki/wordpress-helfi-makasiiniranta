@@ -1,0 +1,27 @@
+{
+  "name": "wphel/makasiiniranta",
+  "type": "wordpress-theme",
+	"version": "master",
+  "authors": [
+    {
+      "name": "Norr",
+      "email": "support@norr.fi"
+    }
+  ],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/City-of-Helsinki/wordpress-helfi-hds-wp.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/City-of-Helsinki/wordpress-helfi-helsinkiteema.git"
+		}
+	],
+	"require": {
+    "wecodemore/wpstarter": "~2.0",
+    "johnpbloch/wordpress-core": ">5.0",
+		"city-of-helsinki/wordpress-helfi-helsinkiteema": "*",
+		"city-of-helsinki/wordpress-helfi-hds-wp": "*"
+  }
+}

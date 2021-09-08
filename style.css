@@ -1,0 +1,411 @@
+
+/*
+ Theme Name:   Helsinkiteema #1 Child
+ Theme URI:    https://www.artcloud.fi/
+ Description:  Helsinkiteema #1 Child Theme
+ Author:       ArtCloud
+ Author URI:   https://www.artcloud.fi/
+ Template:     wordpress-helfi-helsinkiteema
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  helsinki-universalchild
+*/
+body h1{
+
+	font-size: 2rem ;
+
+    font-weight: 700;
+}
+
+
+body h2{
+     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 992px){
+    body h2 {
+        font-size: 2rem;
+    }
+
+    }
+
+
+.hds-container .container-fluid{
+    padding: 0;
+}
+
+.hero {
+    /*margin-bottom: 0 !important;*/
+}
+/*.content__container{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}*/
+
+
+.front-page-section.hero+.front-page-section {
+    padding-top: 0 !important;
+}
+
+.front-page-section:not(.hero):last-child {
+    padding-bottom: 0!important;
+}
+/*
+.wp-block-lazyblock-yhteystiedot  ~ .footer {
+    margin-top: 0!important;
+}*/
+
+
+@media only screen and (min-width: 992px){
+.front-page-section.hero>.hero__thumbnail {
+    display: block !important;
+}
+
+    .front-page-section.hero .flex-container .hero__thumbnail {
+    display: none !important;
+}
+
+    .front-page-section.hero .flex-container>* {
+    width: 100% !important;
+}
+
+    }
+
+
+@media only screen and (min-width: 992px){
+body h1 {
+    font-size: 3rem ;
+}
+}
+
+body .image-wrap--fixed-size {
+    padding-top: 33%;
+}
+
+
+@media only screen and (min-width: 576px) {
+    body .content__header.has-thumbnail .image-wrap {
+           padding-top: 33%;
+
+    }
+    }
+
+
+/* ------------------------- BLOCKS ------------------------------*/
+
+
+.wp-block-lazyblock-timeline .dots  {
+  overflow-y: hidden;
+    text-align: center;
+
+
+}
+
+.wp-block-lazyblock-timeline .dots>*  {
+  margin: auto;
+}
+
+.wp-block-lazyblock-timeline .dots .circle {
+    width: 2rem;
+    border-radius: 50%;
+    border: #C2A251 solid 6px;
+    max-width: 100%;
+
+
+}
+
+.wp-block-lazyblock-timeline .dots .circle:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.wp-block-lazyblock-timeline .dots .line {
+   width: 6px;
+    background-color: #C2A251;
+    height: 100%;
+
+
+}
+
+.wp-block-lazyblock-timeline .row:last-child  .dots .line {
+   display: none;
+
+
+}
+
+.wp-block-lazyblock-timeline .row.current  .dots .line {
+ background-color: #DEDFE1;
+
+}
+.wp-block-lazyblock-timeline .row.current  .dots .circle {
+ background-color: #C2A251;
+
+
+}
+
+.wp-block-lazyblock-timeline .row.future  .dots .line {
+ background-color: #DEDFE1;
+
+}
+.wp-block-lazyblock-timeline .row.future  .dots .circle {
+
+    border-color: #DEDFE1;
+}
+
+.wp-block-lazyblock-timeline .row .text {
+
+    padding-top: 0.3rem;
+    padding-bottom: 2rem;
+
+}
+
+.wp-block-lazyblock-timeline .row .date {
+
+    padding-top: 0.3rem;
+    padding-bottom: 2rem;
+
+}
+
+
+.wp-block-lazyblock-timeline .row .header {
+    padding-top: 0.3rem;
+    padding-bottom: 2rem;
+        font-weight: 700;
+    color: black;
+}
+
+
+.wp-block-lazyblock-ingress {
+    position: relative;
+    overflow: visible;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+        margin-top: -65px;
+}
+
+.wp-block-lazyblock-ingress .full-width-background{
+
+    position: absolute;
+    width: 100vw;
+    bottom: 0; top: 0;
+    left:50%;
+    z-index: -1;
+
+    transform: translate(-50%, 0);
+}
+
+
+.wp-block-lazyblock-ingress .full-width-background .waves{
+
+        position: absolute;
+        bottom: 4rem;
+        left: 0; right: 0;
+
+
+}
+
+.wp-block-lazyblock-ingress .full-width-background .bcgr-color{
+
+background-color: #9FC9EB;
+        position: absolute;
+    left:0; right: 0;
+
+    top:0;
+    bottom: calc(4rem + 80px);
+
+
+
+}
+
+
+.wp-block-lazyblock-yhteystiedot {
+    position: relative;
+    overflow: visible;
+    padding-top: 10rem;
+    padding-bottom: 0;
+    margin-bottom: -63px;
+}
+
+
+.wp-block-lazyblock-yhteystiedot .full-width-background{
+
+    position: absolute;
+    width: 100vw;
+    bottom: 0; top: 0;
+    left:50%;
+    z-index: -3;
+
+    transform: translate(-50%, 0);
+}
+
+
+.wp-block-lazyblock-yhteystiedot .full-width-background .waves{
+
+        position: absolute;
+        top: 0;
+        left: 0; right: 0;
+
+
+}
+
+.wp-block-lazyblock-yhteystiedot .full-width-background .bcgr-color{
+
+background-color: #9FC9EB;
+        position: absolute;
+    left:0; right: 0;
+
+    bottom:-6rem;
+    top: 80px;
+
+
+
+}
+
+.wp-block-lazyblock-wave-mask {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 0;
+    margin-bottom: -3%;
+    z-index: 50;
+    margin-top: 4rem;
+}
+
+
+.wp-block-lazyblock-wave-mask .full-width-background{
+    position: absolute;
+    width: 100vw;
+    bottom: 0; top: 0;
+    left:50%;
+    z-index: -3;
+
+    transform: translate(-50%, 0);
+}
+
+.wp-block-lazyblock-wave-mask .full-width-background-color{
+    position: absolute;
+
+    bottom: 0; top: 0;
+    left: 0; right:0;
+    z-index: -3;
+    background-color: #C2A251;
+
+}
+
+.wp-block-lazyblock-wave-mask svg{
+    width:100%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+
+
+/*
+.wp-block-lazyblock-wave-mask img {
+  clip-path: url(#svgClip);
+	width: 18em;
+	height: 18em;
+	object-fit: cover;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}*/
+
+.nextend-arrow-previous,
+.nextend-arrow-next{
+    background-color: white;
+    overflow: visible !important;
+}
+
+.nextend-arrow-previous:before,
+ .nextend-arrow-next:before{
+    content: " ";
+
+    position: absolute;
+ top: -10px; bottom: -10px;
+    z-index: -1;
+    background-color: white;
+     display: inline !important;
+}
+
+.wp-block-nextend-smartslider3 .nextend-arrow-previous:before{
+    left: -10px;
+    right: -10px;
+    border-radius: 0 50% 50% 0;
+
+}
+.wp-block-nextend-smartslider3 .nextend-arrow-next:before{
+    left: -10px;
+
+    right:-10px;
+    border-radius: 50% 0 0 50%;
+}
+
+
+.norr-spacer{
+    position: relative;
+    margin: 0;
+}
+
+.norr-spacer.high{
+
+  height: 6rem;
+}
+
+.norr-spacer.low{
+  height: 3rem;
+}
+
+
+.hds-koros>svg {
+    height: 42px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1248px){
+.front-page-section.hero .hds-container {
+    min-height: 0 !important;
+
+}
+    }
+@media only screen and (min-width: 992px){
+.front-page-section.hero .hds-container {
+    min-height: 0 !important;
+}
+    }
+@media only screen and (min-width: 768px){
+.front-page-section.hero .hds-container {
+  min-height: 0 !important;
+}
+}
+.front-page-section.hero .hds-container {
+    min-height: 0 !important;
+}
+
+.hds-koros {
+    background: none;
+    position: relative;
+    height: 0 !important;
+    z-index: 1;
+}
+
+#social{
+    background-color: #9FC9EB;
+    padding-bottom: 2rem;
+    margin-bottom:-1rem;
+    }
+
+    .wp-block-lazyblock-yhteystiedot {
+
+    margin-bottom: 0px;
+}
