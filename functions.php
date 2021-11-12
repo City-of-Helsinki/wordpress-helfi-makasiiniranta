@@ -25,3 +25,51 @@ function my_theme_enqueue_styles() {
 }
 
 ?>
+
+/* Custom Post Type Start */
+
+
+
+function create_posttype() {
+
+register_post_type( 'project',
+// CPT Options
+
+array(
+  'labels' => array(
+   'name' => __( 'Projects' ),
+   'singular_name' => __( 'Project' )
+  ),
+  'public' => true,
+    'show_ui' => true,
+  'has_archive' => true,
+  'rewrite' => array('slug' => 'project'),
+    'show_in_rest' => true,
+   'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt') 
+ )
+);  
+    
+    register_post_type( 'jury',
+// CPT Options
+
+array(
+  'labels' => array(
+   'name' => __( 'Jury' ),
+   'singular_name' => __( 'Jury member' )
+  ),
+  'public' => true,
+    'show_ui' => true,
+  'has_archive' => true,
+  'rewrite' => array('slug' => 'jury'),
+    'show_in_rest' => true,
+   'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt') 
+ )
+);    
+    
+    
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+
+?>
