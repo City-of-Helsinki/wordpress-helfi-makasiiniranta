@@ -338,7 +338,7 @@ background-color: #9FC9EB;
 .wp-block-nextend-smartslider3 .nextend-arrow-previous:before, .n2-section-smartslider .nextend-arrow-previous:before{
     left: -10px;
     right: -10px;
-    border-radius: 0 50% 50% 0;
+    border-radius:  50% 50% 50%  50%;
 
 }
 .wp-block-nextend-smartslider3 .nextend-arrow-next:before, .n2-section-smartslider  .nextend-arrow-next:before {
