@@ -21,18 +21,6 @@ while ( have_posts() ) {
 
 ?>
 
-<div class="content__container hds-container hds-container--narrow">
-
-    <div class="load-pdf-cont">
-        
-        <?php if(get_field("pdf")){ ?>
-               <a class="a-button" href="<?php the_field("pdf");?>" target="_blank"> Load pdf</a>
-        <?php } ?>
-        
-        
-    </div>
-    
-    </div>
 <?php
 
 /**
