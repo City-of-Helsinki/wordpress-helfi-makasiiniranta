@@ -41,4 +41,4 @@ while ( have_posts() ) {
   */
 do_action("helsinki_content_after");
 
-get_footer();
+get_footer(); ?>
